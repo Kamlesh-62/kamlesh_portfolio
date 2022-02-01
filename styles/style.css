@@ -1,0 +1,772 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  font-size: 125%;
+}
+
+body {
+  background: #f8f8f8;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+.main-section-before-divider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.left-section {
+  background: #fff;
+  width: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.left-section .left-navbar {
+  position: relative;
+  top: -50px;
+}
+.left-section .left-navbar div img {
+  width: 100px;
+}
+.left-section .left-navbar .left-menu {
+  margin-top: 2rem;
+}
+.left-section .left-navbar .left-menu ul li {
+  margin-top: 1rem;
+}
+.left-section .left-navbar .left-menu ul li a {
+  font-size: 1rem;
+  letter-spacing: 1.2px;
+  color: #767676;
+  cursor: pointer;
+}
+.left-section footer p {
+  width: 60%;
+  margin: 0 auto;
+  letter-spacing: 1.2px;
+  font-size: 0.85rem;
+  color: #767676;
+  padding-top: 0.65rem;
+}
+.left-section footer p span {
+  color: #999999;
+}
+
+.right-section {
+  width: 75vw;
+  border-left: 1px solid #999999;
+  position: relative;
+  z-index: 100;
+}
+.right-section section .home-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+.right-section section .home-section .home-animation-img svg {
+  height: 250px;
+}
+.right-section section .home-section .home-header {
+  margin-left: 1rem;
+}
+.right-section section .home-section .home-header h2 {
+  letter-spacing: 1.2px;
+  font-size: 2rem;
+}
+.right-section section .home-section .home-header h3 {
+  letter-spacing: 1px;
+  font-style: italic;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  text-align: center;
+  color: #767676;
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+}
+.right-section section .home-section .home-header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 2rem;
+}
+.right-section section .home-section .home-header ul li a {
+  font-size: 2rem;
+  color: #000;
+  cursor: pointer;
+}
+
+#coding {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#left, #right {
+  -webkit-animation: typing 0.2s cubic-bezier(0.18, 0.85, 0.72, 0.22) infinite alternate;
+          animation: typing 0.2s cubic-bezier(0.18, 0.85, 0.72, 0.22) infinite alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes typing {
+  0% {
+    -webkit-transform: rotateZ(-10deg);
+            transform: rotateZ(-10deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(10deg);
+            transform: rotateZ(10deg);
+  }
+}
+
+@keyframes typing {
+  0% {
+    -webkit-transform: rotateZ(-10deg);
+            transform: rotateZ(-10deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(10deg);
+            transform: rotateZ(10deg);
+  }
+}
+@-webkit-keyframes move-head {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+}
+@keyframes move-head {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+}
+#head {
+  -webkit-animation: move-head 1s cubic-bezier(0.41, 0.16, 0.24, 0.71) infinite alternate;
+          animation: move-head 1s cubic-bezier(0.41, 0.16, 0.24, 0.71) infinite alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+.about {
+  height: 100vh;
+  width: 75vw;
+  z-index: 200;
+}
+.about h2 {
+  padding: 2rem 0 0 2rem;
+}
+.about .about-section {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about .about-section .kamlesh-picture {
+  width: 50%;
+}
+.about .about-section .kamlesh-about {
+  width: 60%;
+  padding: 0 3rem;
+}
+.about .about-section .kamlesh-about h2 {
+  color: #000;
+}
+.about .about-section .kamlesh-about p {
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-family: "Mulish", sans-serif;
+  color: #767676;
+}
+.about .about-section .kamlesh-about div span a {
+  padding: 0.5rem 0.85rem;
+  border: 2px solid #000;
+  background-color: #000;
+  color: #fff;
+}
+.about .about-section .kamlesh-about div span a:hover {
+  color: #000;
+  background-color: #f8f8f8;
+}
+
+.portfolio h2 {
+  padding: 2rem;
+}
+.portfolio .portfolio-section .portfolio-1,
+.portfolio .portfolio-section .portfolio-2,
+.portfolio .portfolio-section .portfolio-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 4rem;
+}
+.portfolio .portfolio-section .portfolio-1 div img,
+.portfolio .portfolio-section .portfolio-2 div img,
+.portfolio .portfolio-section .portfolio-3 div img {
+  width: 600px;
+  border: 2px solid #000;
+  position: relative;
+}
+.portfolio .portfolio-section .portfolio-1 .textilee-info,
+.portfolio .portfolio-section .portfolio-1 .foodhub-info,
+.portfolio .portfolio-section .portfolio-1 .news-info,
+.portfolio .portfolio-section .portfolio-2 .textilee-info,
+.portfolio .portfolio-section .portfolio-2 .foodhub-info,
+.portfolio .portfolio-section .portfolio-2 .news-info,
+.portfolio .portfolio-section .portfolio-3 .textilee-info,
+.portfolio .portfolio-section .portfolio-3 .foodhub-info,
+.portfolio .portfolio-section .portfolio-3 .news-info {
+  width: 40%;
+}
+.portfolio .portfolio-section .portfolio-1 .textilee-info p,
+.portfolio .portfolio-section .portfolio-1 .foodhub-info p,
+.portfolio .portfolio-section .portfolio-1 .news-info p,
+.portfolio .portfolio-section .portfolio-2 .textilee-info p,
+.portfolio .portfolio-section .portfolio-2 .foodhub-info p,
+.portfolio .portfolio-section .portfolio-2 .news-info p,
+.portfolio .portfolio-section .portfolio-3 .textilee-info p,
+.portfolio .portfolio-section .portfolio-3 .foodhub-info p,
+.portfolio .portfolio-section .portfolio-3 .news-info p {
+  letter-spacing: 1.1px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #767676;
+  margin-top: 1rem;
+}
+.portfolio .portfolio-section .portfolio-1 .textilee-info p.project-details,
+.portfolio .portfolio-section .portfolio-1 .foodhub-info p.project-details,
+.portfolio .portfolio-section .portfolio-1 .news-info p.project-details,
+.portfolio .portfolio-section .portfolio-2 .textilee-info p.project-details,
+.portfolio .portfolio-section .portfolio-2 .foodhub-info p.project-details,
+.portfolio .portfolio-section .portfolio-2 .news-info p.project-details,
+.portfolio .portfolio-section .portfolio-3 .textilee-info p.project-details,
+.portfolio .portfolio-section .portfolio-3 .foodhub-info p.project-details,
+.portfolio .portfolio-section .portfolio-3 .news-info p.project-details {
+  color: #000;
+  line-height: 1.5;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+.portfolio .portfolio-section .portfolio-1 .textilee-info ul,
+.portfolio .portfolio-section .portfolio-1 .foodhub-info ul,
+.portfolio .portfolio-section .portfolio-1 .news-info ul,
+.portfolio .portfolio-section .portfolio-2 .textilee-info ul,
+.portfolio .portfolio-section .portfolio-2 .foodhub-info ul,
+.portfolio .portfolio-section .portfolio-2 .news-info ul,
+.portfolio .portfolio-section .portfolio-3 .textilee-info ul,
+.portfolio .portfolio-section .portfolio-3 .foodhub-info ul,
+.portfolio .portfolio-section .portfolio-3 .news-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+}
+.portfolio .portfolio-section .portfolio-1 .textilee-info ul li,
+.portfolio .portfolio-section .portfolio-1 .foodhub-info ul li,
+.portfolio .portfolio-section .portfolio-1 .news-info ul li,
+.portfolio .portfolio-section .portfolio-2 .textilee-info ul li,
+.portfolio .portfolio-section .portfolio-2 .foodhub-info ul li,
+.portfolio .portfolio-section .portfolio-2 .news-info ul li,
+.portfolio .portfolio-section .portfolio-3 .textilee-info ul li,
+.portfolio .portfolio-section .portfolio-3 .foodhub-info ul li,
+.portfolio .portfolio-section .portfolio-3 .news-info ul li {
+  margin-left: 2rem;
+}
+.portfolio .portfolio-section .portfolio-1 .textilee-info ul li span a,
+.portfolio .portfolio-section .portfolio-1 .foodhub-info ul li span a,
+.portfolio .portfolio-section .portfolio-1 .news-info ul li span a,
+.portfolio .portfolio-section .portfolio-2 .textilee-info ul li span a,
+.portfolio .portfolio-section .portfolio-2 .foodhub-info ul li span a,
+.portfolio .portfolio-section .portfolio-2 .news-info ul li span a,
+.portfolio .portfolio-section .portfolio-3 .textilee-info ul li span a,
+.portfolio .portfolio-section .portfolio-3 .foodhub-info ul li span a,
+.portfolio .portfolio-section .portfolio-3 .news-info ul li span a {
+  padding: 0.4rem 0.85rem;
+  border: 2px solid #000;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: #000;
+}
+.portfolio .portfolio-section .portfolio-1 .textilee-info ul li span a:hover,
+.portfolio .portfolio-section .portfolio-1 .foodhub-info ul li span a:hover,
+.portfolio .portfolio-section .portfolio-1 .news-info ul li span a:hover,
+.portfolio .portfolio-section .portfolio-2 .textilee-info ul li span a:hover,
+.portfolio .portfolio-section .portfolio-2 .foodhub-info ul li span a:hover,
+.portfolio .portfolio-section .portfolio-2 .news-info ul li span a:hover,
+.portfolio .portfolio-section .portfolio-3 .textilee-info ul li span a:hover,
+.portfolio .portfolio-section .portfolio-3 .foodhub-info ul li span a:hover,
+.portfolio .portfolio-section .portfolio-3 .news-info ul li span a:hover {
+  background-color: #f8f8f8;
+  color: #000;
+}
+
+.skills {
+  height: 100vh;
+}
+.skills h2 {
+  padding: 2rem 0 0 2rem;
+}
+.skills .skills-section .skills-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+.skills .skills-section .skills-list li {
+  margin: 2rem 3rem;
+}
+.skills .skills-section .skills-list li span i {
+  font-size: 4rem;
+}
+
+.get-in-touch-and-contact {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.get-in-touch-and-contact .get-in-touch {
+  width: 35%;
+}
+.get-in-touch-and-contact .get-in-touch h3 {
+  font-size: 2rem;
+  letter-spacing: 1.1px;
+}
+.get-in-touch-and-contact .get-in-touch p {
+  line-height: 1.3;
+  letter-spacing: 1.1px;
+  font-family: "Montserrat", sans-serif;
+  color: #767676;
+  font-size: 0.9rem;
+}
+.get-in-touch-and-contact .get-in-touch .my-email {
+  color: #000;
+}
+.get-in-touch-and-contact .get-in-touch ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 2rem;
+}
+.get-in-touch-and-contact .get-in-touch ul li i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.get-in-touch-and-contact .contact {
+  width: 55%;
+}
+.get-in-touch-and-contact .contact h2 {
+  letter-spacing: 1px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.get-in-touch-and-contact .contact form {
+  padding: 2rem;
+}
+.get-in-touch-and-contact .contact form input {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  border: 1px solid #000;
+  background-color: #f8f8f8;
+  height: 2rem;
+}
+.get-in-touch-and-contact .contact form input::-webkit-input-placeholder {
+  font-size: 0.85rem;
+  letter-spacing: 1.1px;
+  color: #767676;
+  font-weight: 400px;
+}
+.get-in-touch-and-contact .contact form input::-moz-placeholder {
+  font-size: 0.85rem;
+  letter-spacing: 1.1px;
+  color: #767676;
+  font-weight: 400px;
+}
+.get-in-touch-and-contact .contact form input:-ms-input-placeholder {
+  font-size: 0.85rem;
+  letter-spacing: 1.1px;
+  color: #767676;
+  font-weight: 400px;
+}
+.get-in-touch-and-contact .contact form input::-ms-input-placeholder {
+  font-size: 0.85rem;
+  letter-spacing: 1.1px;
+  color: #767676;
+  font-weight: 400px;
+}
+.get-in-touch-and-contact .contact form input::placeholder {
+  font-size: 0.85rem;
+  letter-spacing: 1.1px;
+  color: #767676;
+  font-weight: 400px;
+}
+.get-in-touch-and-contact .contact form textarea {
+  background-color: #f8f8f8;
+  border: 1px solid #000;
+  display: block;
+  width: 100%;
+}
+.get-in-touch-and-contact .contact form textarea::-webkit-input-placeholder {
+  font-size: 0.85rem;
+  letter-spacing: 1.1px;
+  color: #767676;
+  font-weight: 400px;
+}
+.get-in-touch-and-contact .contact form textarea::-moz-placeholder {
+  font-size: 0.85rem;
+  letter-spacing: 1.1px;
+  color: #767676;
+  font-weight: 400px;
+}
+.get-in-touch-and-contact .contact form textarea:-ms-input-placeholder {
+  font-size: 0.85rem;
+  letter-spacing: 1.1px;
+  color: #767676;
+  font-weight: 400px;
+}
+.get-in-touch-and-contact .contact form textarea::-ms-input-placeholder {
+  font-size: 0.85rem;
+  letter-spacing: 1.1px;
+  color: #767676;
+  font-weight: 400px;
+}
+.get-in-touch-and-contact .contact form textarea::placeholder {
+  font-size: 0.85rem;
+  letter-spacing: 1.1px;
+  color: #767676;
+  font-weight: 400px;
+}
+.get-in-touch-and-contact .contact form button {
+  padding: 0.35rem 1rem;
+  background: #000;
+  letter-spacing: 1.1px;
+  color: #fff;
+  border: 2px solid #000;
+  margin-top: 2rem;
+}
+.get-in-touch-and-contact .contact form button:hover {
+  background: #f8f8f8;
+  color: #000;
+}

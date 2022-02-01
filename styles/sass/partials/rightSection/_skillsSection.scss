@@ -1,0 +1,19 @@
+.skills{
+    height: 100vh;
+
+    h2{
+        padding: 2rem 0 0 2rem;
+    }
+    .skills-section .skills-list{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 2rem;
+        li{
+            margin: 2rem 3rem;
+            span i{
+                font-size: 4rem;
+            }
+        }
+    }
+}

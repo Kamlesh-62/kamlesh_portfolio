@@ -1,0 +1,80 @@
+.right-section{
+    width: 75vw;
+    border-left: 1px solid $lightSecondaryColor;
+    position: relative;
+    z-index: 100;
+
+    section .home-section{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+
+        .home-animation-img svg{
+            height: 250px;
+        }
+        .home-header{
+            margin-left: 1rem;
+            h2{
+                letter-spacing: 1.2px;
+                font-size: 2rem;
+            }
+            h3{
+                letter-spacing: 1px;
+                font-style:italic;
+                font-size: 1.3rem;
+                margin-top: 2rem;
+                text-align: center;
+                color: $secondaryColor;
+                font-family: $secondaryFontFamily;
+                font-weight: 500;
+            }
+            ul{
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 2rem;
+
+                li a{
+                    font-size: 2rem;
+                    color: $blackColor;
+                    cursor:pointer;
+                }
+            }
+        }
+    }
+}
+// animation for coding animation svg ,
+//  code reference get from codepen @m-abdelwahab
+#coding {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+    justify-content: center; 
+}
+#left, #right{
+  animation: typing 0.2s cubic-bezier(.18,.85,.72,.22) infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes typing {
+  0% {
+    transform: rotateZ(-10deg);
+  }
+  100% {
+    transform: rotateZ(10deg);
+  }
+}
+@keyframes move-head {
+ 0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+#head {
+  animation: move-head 1s cubic-bezier(.41,.16,.24,.71) infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}

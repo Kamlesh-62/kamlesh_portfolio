@@ -1,0 +1,49 @@
+
+.about{
+    height: 100vh;
+    width: 75vw;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    z-index: 200;
+    
+    h2{
+        padding: 2rem 0 0 2rem;
+    }
+
+    .about-section{
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .kamlesh-picture{
+            width: 50%;
+        }
+        .kamlesh-about{
+            width: 60%;
+            padding: 0 3rem;
+            h2{
+                color: $blackColor;
+            }
+            p{
+                letter-spacing: 1px;
+                line-height: 1.5;
+                font-family: $secondaryFontFamily;
+                color: $secondaryColor;
+            }
+            div {
+                span a{
+                    padding: 0.5rem 0.85rem;
+                    border: 2px solid $blackColor;
+                    background-color: $blackColor;
+                    color: $whiteColor;
+                    &:hover{
+                        color: $blackColor;
+                        background-color: $greyColor;
+                    }
+                }
+            }
+        }
+    }
+}
