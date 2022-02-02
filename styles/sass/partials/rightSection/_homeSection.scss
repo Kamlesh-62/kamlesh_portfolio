@@ -1,11 +1,12 @@
 .right-section{
     width: 80vw;
-    height: 100vh;
     position: relative;
     background-color: $greyColor;
+    overflow-y: hidden;
 
     section .home-section{
         display: flex;
+        overflow-y: hidden;
         justify-content: space-around;
         align-items: center;
         height: 100%;
@@ -16,9 +17,8 @@
         left: 0px;
         right: 0;
         bottom: 0;
-        opacity: 1;
-        visibility: visible; 
-        transition: 0.3s all ease-in-out;
+        opacity: 0;
+        transition: 0.4s all ease-in-out;
         // z-index: 1000;
 
         .home-animation-img svg{
@@ -56,7 +56,6 @@
     }
 }
 section .home-section.show{
-    // left: 0;
     opacity: 1;
     visibility: visible;
 }
@@ -75,6 +74,10 @@ section .home-section.show{
    .right-section section .home-section{
      display: flex;
      flex-direction: column-reverse;
+
+     .home-animation-img svg{
+          height: 200px;
+      }
 
      .home-header{
        text-align: center;

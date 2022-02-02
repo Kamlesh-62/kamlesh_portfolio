@@ -11,16 +11,17 @@
     right: 0;
     bottom: 0;
     background: $greyColor;
-    transition: 0.3s all ease-in-out;
+    transition: 0.4s all ease-in-out;
     opacity: 0;
     visibility: hidden;
+    overflow-y: scroll;
     // z-index: 600;
 
     .get-in-touch{
         width: 45%;
         padding: 0 1rem;
         h3{
-            font-size: 2rem;
+            font-size: clamp(1.2rem, 2vw, 1.5rem);
             letter-spacing: 1.1px;
         }
         p{
@@ -28,7 +29,7 @@
             letter-spacing: 1.1px;
             font-family: $primaryFontFamily;
             color: $secondaryColor;
-            font-size: 0.90rem;
+            font-size: clamp(0.75rem, 2vw, 0.9rem);
         }
         .my-email{
             color: $blackColor;
@@ -45,14 +46,14 @@
     }
     .contact{
         width: 50%;
+        padding: 1rem;
 
         h2{
             letter-spacing: 1px;
-            font-size: 2.5rem;
+            font-size:clamp(1.3rem, 4vw, 2.2rem);
             font-weight: 700;
         }
         form{
-            padding: 2rem;
             input{
                 display: block;
                 width: 100%;
@@ -95,7 +96,30 @@
     }
 }
 .get-in-touch-and-contact.show{
-    //  left: 0;
     opacity: 1;
     visibility: visible;
+}
+
+// media query for 875px
+@media (max-width:875px){
+    .get-in-touch-and-contact{
+    flex-direction: column-reverse;
+
+        .get-in-touch{
+        width: 80%;
+        padding:1rem 0;
+        }
+        .contact{
+            width: 80%;
+            margin-bottom: 1rem;
+
+            form{
+                padding: 0;
+                
+                button{
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+    }
 }

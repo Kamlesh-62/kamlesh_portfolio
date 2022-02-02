@@ -9,7 +9,7 @@
     background: $greyColor;
     opacity: 0;
     visibility: hidden;
-    transition: 0.3s all ease-in-out;
+    transition: 0.4s all ease-in-out;
     overflow-y: scroll;
 
     h2{
@@ -83,7 +83,6 @@
 .portfolio.show{
     opacity: 1;
     visibility: visible;
-    // left: 0;
 }
 @media (max-width:1048px){
     .portfolio .portfolio-section{
@@ -126,6 +125,32 @@
             }
             .news-info{
                 width: 70%;
+            }
+        }
+    }
+}
+@media (max-width:700px){
+    .portfolio .portfolio-section{
+        .portfolio-1,
+        .portfolio-3{
+            margin-bottom: 1rem;
+            div{
+                width: 90%;
+                margin-bottom: 2rem;
+            }
+            .textilee-info,
+            .foodhub-info{
+                width: 90%;
+            }
+        }
+        .portfolio-2{
+            margin-bottom: 1rem;
+            div{
+                width: 90%;
+                margin-bottom: 2rem;
+            }
+            .news-info{
+                width: 90%;
             }
         }
     }

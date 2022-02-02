@@ -22,9 +22,7 @@ const clickEvent = () =>{
         portfolioSection.classList.remove("show")
         skillsSection.classList.remove("show")
         contactSection.classList.remove("show")
-        // console.log(this)
-    }
-    )
+    })
     aboutLink.addEventListener("click", function(e){
         homeSection.classList.remove("show")
         aboutSection.classList.add("show")

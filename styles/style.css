@@ -340,14 +340,15 @@ a {
 }
 .right-section {
   width: 80vw;
-  height: 100vh;
   position: relative;
   background-color: #f1f1f1;
+  overflow-y: hidden;
 }
 .right-section section .home-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow-y: hidden;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -361,10 +362,9 @@ a {
   left: 0px;
   right: 0;
   bottom: 0;
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: 0.3s all ease-in-out;
-  transition: 0.3s all ease-in-out;
+  opacity: 0;
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
 }
 .right-section section .home-section .home-animation-img svg {
   height: 230px;
@@ -423,6 +423,9 @@ section .home-section.show {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+  .right-section section .home-section .home-animation-img svg {
+    height: 200px;
   }
   .right-section section .home-section .home-header {
     text-align: center;
@@ -521,8 +524,8 @@ section .home-section.show {
   background: #f1f1f1;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: 0.3s all ease-in-out;
-  transition: 0.3s all ease-in-out;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 .about h2 {
   padding: 2rem 0 0 2rem;
@@ -608,8 +611,8 @@ section .home-section.show {
   background: #f1f1f1;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: 0.3s all ease-in-out;
-  transition: 0.3s all ease-in-out;
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
   overflow-y: scroll;
 }
 .portfolio h2 {
@@ -811,6 +814,33 @@ section .home-section.show {
     width: 70%;
   }
 }
+@media (max-width: 700px) {
+  .portfolio .portfolio-section .portfolio-1,
+.portfolio .portfolio-section .portfolio-3 {
+    margin-bottom: 1rem;
+  }
+  .portfolio .portfolio-section .portfolio-1 div,
+.portfolio .portfolio-section .portfolio-3 div {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+  .portfolio .portfolio-section .portfolio-1 .textilee-info,
+.portfolio .portfolio-section .portfolio-1 .foodhub-info,
+.portfolio .portfolio-section .portfolio-3 .textilee-info,
+.portfolio .portfolio-section .portfolio-3 .foodhub-info {
+    width: 90%;
+  }
+  .portfolio .portfolio-section .portfolio-2 {
+    margin-bottom: 1rem;
+  }
+  .portfolio .portfolio-section .portfolio-2 div {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+  .portfolio .portfolio-section .portfolio-2 .news-info {
+    width: 90%;
+  }
+}
 .skills {
   position: absolute;
   width: 100%;
@@ -821,9 +851,10 @@ section .home-section.show {
   bottom: 0;
   background: #f1f1f1;
   opacity: 0;
-  -webkit-transition: 0.3s all ease-in-out;
-  transition: 0.3s all ease-in-out;
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
   visibility: hidden;
+  overflow-y: scroll;
 }
 .skills h2 {
   padding: 2rem 0 0 2rem;
@@ -837,14 +868,17 @@ section .home-section.show {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 2rem;
 }
 .skills .skills-section .skills-list li {
-  margin: 2rem 3rem;
+  margin: 2rem 2.5rem;
   text-align: center;
 }
 .skills .skills-section .skills-list li span i {
-  font-size: 4rem;
+  font-size: clamp(3rem , 8vw, 4rem);
 }
 
 .skills.show {
@@ -852,6 +886,11 @@ section .home-section.show {
   visibility: visible;
 }
 
+@media (max-width: 799px) {
+  .skills .skills-section .skills-list li {
+    margin: 1rem 1.5rem;
+  }
+}
 .get-in-touch-and-contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -871,17 +910,18 @@ section .home-section.show {
   right: 0;
   bottom: 0;
   background: #f1f1f1;
-  -webkit-transition: 0.3s all ease-in-out;
-  transition: 0.3s all ease-in-out;
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
   opacity: 0;
   visibility: hidden;
+  overflow-y: scroll;
 }
 .get-in-touch-and-contact .get-in-touch {
   width: 45%;
   padding: 0 1rem;
 }
 .get-in-touch-and-contact .get-in-touch h3 {
-  font-size: 2rem;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
   letter-spacing: 1.1px;
 }
 .get-in-touch-and-contact .get-in-touch p {
@@ -889,7 +929,7 @@ section .home-section.show {
   letter-spacing: 1.1px;
   font-family: "Montserrat", sans-serif;
   color: #767676;
-  font-size: 0.9rem;
+  font-size: clamp(0.75rem, 2vw, 0.9rem);
 }
 .get-in-touch-and-contact .get-in-touch .my-email {
   color: #000;
@@ -909,14 +949,12 @@ section .home-section.show {
 }
 .get-in-touch-and-contact .contact {
   width: 50%;
+  padding: 1rem;
 }
 .get-in-touch-and-contact .contact h2 {
   letter-spacing: 1px;
-  font-size: 2.5rem;
+  font-size: clamp(1.3rem, 4vw, 2.2rem);
   font-weight: 700;
-}
-.get-in-touch-and-contact .contact form {
-  padding: 2rem;
 }
 .get-in-touch-and-contact .contact form input {
   display: block;
@@ -1008,4 +1046,27 @@ section .home-section.show {
 .get-in-touch-and-contact.show {
   opacity: 1;
   visibility: visible;
+}
+
+@media (max-width: 875px) {
+  .get-in-touch-and-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .get-in-touch-and-contact .get-in-touch {
+    width: 80%;
+    padding: 1rem 0;
+  }
+  .get-in-touch-and-contact .contact {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  .get-in-touch-and-contact .contact form {
+    padding: 0;
+  }
+  .get-in-touch-and-contact .contact form button {
+    margin-top: 0.5rem;
+  }
 }
