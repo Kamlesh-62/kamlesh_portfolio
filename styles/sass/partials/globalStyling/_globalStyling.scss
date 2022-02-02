@@ -11,6 +11,8 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 // global styling
 html{
     font-size: 125%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 body{
     background: $greyColor;

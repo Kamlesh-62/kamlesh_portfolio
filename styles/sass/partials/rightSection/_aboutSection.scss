@@ -1,43 +1,58 @@
-
 .about{
-    height: 100vh;
-    width: 75vw;
-    // position: absolute;
-    // top: 0;
-    // right: 0;
-    z-index: 200;
-    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%; 
+    top: 0;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    background: $greyColor;
+    opacity: 0; 
+    visibility: hidden;  
+    transition: 0.3s all ease-in-out;
+
     h2{
         padding: 2rem 0 0 2rem;
+        font-size:clamp(1.1rem, 4vw, 1.7rem);
     }
 
     .about-section{
-        height: 100vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 100%;
+        width: 100%;
         
         .kamlesh-picture{
-            width: 50%;
+            width: 40%;
         }
         .kamlesh-about{
             width: 60%;
-            padding: 0 3rem;
-            h2{
+            padding: 0 2rem;
+            h3.about-kamlesh-heading{
                 color: $blackColor;
+                font-size: clamp(0.9rem, 2vw, 1.2rem);
+                margin-left: 0;
             }
             p{
                 letter-spacing: 1px;
                 line-height: 1.5;
                 font-family: $secondaryFontFamily;
                 color: $secondaryColor;
+                font-size: clamp(0.80rem, 2vw, 1rem);
             }
             div {
+                margin-top: 1.5rem;
                 span a{
                     padding: 0.5rem 0.85rem;
                     border: 2px solid $blackColor;
                     background-color: $blackColor;
                     color: $whiteColor;
+                    margin-top: 1.5rem;
+
                     &:hover{
                         color: $blackColor;
                         background-color: $greyColor;
@@ -45,5 +60,23 @@
                 }
             }
         }
+    }
+}
+.about.show{
+    // left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+// media query for 940px
+@media (max-width:940px){
+    .about .about-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .kamlesh-about{
+            width: 90%;
+        }
+
     }
 }
