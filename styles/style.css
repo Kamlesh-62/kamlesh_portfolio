@@ -692,7 +692,7 @@ section .home-section.show {
   overflow-y: scroll;
 }
 .portfolio h2 {
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 2rem 2rem;
   margin-bottom: 2rem;
   font-size: clamp(1.3rem, 4vw, 1.9rem);
 }
@@ -979,8 +979,9 @@ section .home-section.show {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1029,9 +1030,10 @@ section .home-section.show {
           justify-content: space-evenly;
   margin-top: 2rem;
 }
-.get-in-touch-and-contact .get-in-touch ul li i {
+.get-in-touch-and-contact .get-in-touch ul li a i {
   font-size: 2rem;
   cursor: pointer;
+  color: #000;
 }
 .get-in-touch-and-contact .contact {
   width: 50%;
@@ -1146,7 +1148,7 @@ section .home-section.show {
   }
   .get-in-touch-and-contact .get-in-touch {
     width: 80%;
-    padding: 1rem 0;
+    padding: 2rem 0;
   }
   .get-in-touch-and-contact .contact {
     width: 80%;
@@ -1162,6 +1164,7 @@ section .home-section.show {
 @media (max-width: 675px) {
   .get-in-touch-and-contact .get-in-touch {
     width: 90%;
+    margin: 0 0 2rem 0;
   }
   .get-in-touch-and-contact .contact {
     padding: 0;

@@ -1,6 +1,6 @@
 .get-in-touch-and-contact{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
     position: absolute;
@@ -15,7 +15,6 @@
     opacity: 0;
     visibility: hidden;
     overflow-y: scroll;
-    // z-index: 600;
 
     .get-in-touch{
         width: 45%;
@@ -41,9 +40,10 @@
             display: flex;
             justify-content: space-evenly;
             margin-top: 2rem;
-            li i{
+            li a i{
                 font-size: 2rem;
                 cursor: pointer;
+                color: $blackColor;
             }
         }
     }
@@ -113,7 +113,7 @@
 
         .get-in-touch{
         width: 80%;
-        padding:1rem 0;
+        padding:2rem 0;
         }
         .contact{
             width: 80%;
@@ -124,6 +124,7 @@
                 
                 button{
                     margin-top: 0.5rem;
+                    
                 }
             }
         }
@@ -133,6 +134,7 @@
     .get-in-touch-and-contact{
         .get-in-touch{
         width: 90%;
+        margin: 0 0 2rem 0;
     }
     .contact{
             padding: 0;
