@@ -59,10 +59,6 @@ const clickEvent = () =>{
     hamburgerButton.addEventListener("click", function(){
         hamburgerButton.classList.toggle("visiable")
         menu.classList.toggle("open")
-
-    })
-    
+    }) 
 }
-
-
 init();

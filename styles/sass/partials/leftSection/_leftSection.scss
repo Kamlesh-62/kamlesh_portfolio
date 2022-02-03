@@ -13,10 +13,10 @@
         position: relative;
         top: 25%;
         div img{
-            width: 100px;
+            width: 80px;
         }
         .left-menu{
-            margin-top: 2rem;
+            margin-top: 1.5rem;
 
             ul li{
                 margin-top: 1rem;
@@ -38,36 +38,34 @@
             letter-spacing: 1.2px;
             font-size: 0.85rem;
             color: $secondaryColor;
-            padding-top:2rem ;
+            padding-top:2rem;
+            line-height: 1.5;
             span{
                 color: $lightSecondaryColor;
             }
         }
     }
 }
-input[type="checkbox"]{
-    display: none;
-}
 
 // Media query for left section
 @media (max-width:1100px){
     .left-section{
         position: fixed;
-        right: 0;
+        right: -500px;
         height: 100%;
-        display: none;
         border: none;
         width: 200px;
+        transition: 0.3s right ease-in-out;
         .left-navbar{
             position: relative;
             top: 20%;
         }
-        footer p{
-            position: relative;
-            top: 50%;
-        } 
+        // footer p{
+        //     position: relative;
+        //     top: 50%;
+        // } 
     }
     .left-section.open{
-        display: block;
+        right: 0;
     }
 }

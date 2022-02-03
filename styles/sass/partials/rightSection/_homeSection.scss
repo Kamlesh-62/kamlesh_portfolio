@@ -4,10 +4,22 @@
     background-color: $greyColor;
     overflow-y: hidden;
 
+    .right-section-logo{
+      position: sticky;
+      width: 100%;
+      background: $whiteColor;
+      z-index: 10000;
+      display: none;
+      img{
+        width: 40px;
+        margin: 0.3rem;
+      }
+    }
+
     section .home-section{
         display: flex;
         overflow-y: hidden;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         height: 100%;
         width: 100%;
@@ -19,10 +31,10 @@
         bottom: 0;
         opacity: 0;
         transition: 0.4s all ease-in-out;
-        // z-index: 1000;
 
         .home-animation-img svg{
             height: 230px;
+            margin-top: 3rem;
         }
         .home-header{
             margin-left: 1rem;
@@ -45,7 +57,8 @@
             ul{
                 display: flex;
                 justify-content: space-around;
-                margin-top: 2rem;
+                width: 60%;
+                margin: 2rem auto;
 
                 li a{
                     font-size: 2rem;
@@ -62,10 +75,11 @@ section .home-section.show{
 }
 .right-section .hamburger-menu{
     position: fixed;
-    top: 40px;
-    right: 50px;
+    top: 13px;
+    right: 20px;
     z-index: 999999;
     display: none;
+    cursor: pointer;
 
     .line1,
     .line2,
@@ -87,7 +101,7 @@ section .home-section.show{
     }
     .line3{
       transform: rotate(-45deg) translate(10px, -5px);  
-    }
+  }
 }
 
 
@@ -96,13 +110,17 @@ section .home-section.show{
     .right-section{
       width: 100%;
 
-    section .home-section .home-header{
-      width: 60%;
+      .right-section-logo{
+        display: block;
+      }
+
+      section .home-section .home-header{
+        width: 60%;
+      }
     }
-  }
-  .right-section .hamburger-menu{
-    display: block;
-  }
+    .right-section .hamburger-menu{
+      display: block;
+    }
 }
 @media (max-width:940px){
    .right-section section .home-section{
@@ -117,6 +135,13 @@ section .home-section.show{
        text-align: center;
        width: 60%;
        margin-top: 0;
+
+       ul{
+         width: 70%;
+         li{
+           margin: 0 0.5rem;
+         }
+       }
      }
    }
 }

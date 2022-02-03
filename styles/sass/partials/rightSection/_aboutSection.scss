@@ -13,9 +13,10 @@
     opacity: 0; 
     visibility: hidden;  
     transition: 0.2s all ease-in-out;
+    overflow-y: scroll;
 
     h2{
-        padding: 2rem 0 0 2rem;
+        padding: 4rem 0 0 2rem;
         font-size:clamp(1.3rem, 4vw, 1.9rem);
     }
 
