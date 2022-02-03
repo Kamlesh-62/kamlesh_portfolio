@@ -666,7 +666,7 @@ section .home-section.show {
 }
 @media (max-width: 680px) {
   .about .about-section .kamlesh-about {
-    width: 90%;
+    width: 95%;
     margin: 2rem auto;
   }
   .about .about-section .kamlesh-picture {
