@@ -17,6 +17,7 @@ const skillsSection = document.querySelector(".skills");
 const contactSection = document.querySelector(".get-in-touch-and-contact");
 const portfolioSection = document.querySelector(".portfolio");
 const menu = document.querySelector(".left-section");
+const closeNavbar = document.querySelector(".left-section")
 
 const clickEvent = () =>{
     // 
@@ -26,6 +27,8 @@ const clickEvent = () =>{
         portfolioSection.classList.remove("show")
         skillsSection.classList.remove("show")
         contactSection.classList.remove("show")
+        closeNavbar.classList.remove("open")
+        hamburgerButton.classList.toggle("visiable")
     })
     aboutLink.addEventListener("click", function(e){
         homeSection.classList.remove("show")
@@ -33,6 +36,8 @@ const clickEvent = () =>{
         portfolioSection.classList.remove("show")
         skillsSection.classList.remove("show")
         contactSection.classList.remove("show")
+        closeNavbar.classList.remove("open")
+        hamburgerButton.classList.toggle("visiable")
     })
     portfolioLink.addEventListener("click", function(e){
         homeSection.classList.remove("show")
@@ -40,6 +45,8 @@ const clickEvent = () =>{
         portfolioSection.classList.add("show")
         skillsSection.classList.remove("show")
         contactSection.classList.remove("show")
+        closeNavbar.classList.remove("open")
+        hamburgerButton.classList.toggle("visiable")
     })
     skillsLink.addEventListener("click", function(e){
         homeSection.classList.remove("show")
@@ -47,6 +54,8 @@ const clickEvent = () =>{
         portfolioSection.classList.remove("show")
         skillsSection.classList.add("show")
         contactSection.classList.remove("show")
+        closeNavbar.classList.remove("open")
+        hamburgerButton.classList.toggle("visiable")
     })
     contactLink.addEventListener("click", function(e){
         homeSection.classList.remove("show")
@@ -54,6 +63,8 @@ const clickEvent = () =>{
         portfolioSection.classList.remove("show")
         skillsSection.classList.remove("show")
         contactSection.classList.add("show")
+        closeNavbar.classList.remove("open")
+        hamburgerButton.classList.toggle("visiable")
     })
     
     hamburgerButton.addEventListener("click", function(){
