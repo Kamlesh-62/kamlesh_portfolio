@@ -11,10 +11,10 @@
     transition: 0.4s all ease-in-out;
     visibility: hidden;
     overflow-y: scroll;
-    // z-index: 700;
 
     h2{
         padding: 2rem 0 0 2rem;
+        font-size:clamp(1.3rem, 4vw, 1.9rem);
     }
     .skills-section{
         .skills-list{
@@ -42,6 +42,7 @@
     .skills{
         .skills-section{
             .skills-list{
+                padding: 1rem;
                 li{
                     margin: 1rem 1.5rem;
                 }

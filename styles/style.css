@@ -281,6 +281,11 @@ a {
 .left-section {
   background: #fff;
   width: 20vw;
+  z-index: 99999;
+  border-right: 1px solid #999999;
+  overflow-y: hidden;
+}
+.left-section .left-navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,13 +299,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 99999;
-  border-right: 1px solid #999999;
-  overflow-y: hidden;
-}
-.left-section .left-navbar {
   position: relative;
-  top: -50px;
+  top: 25%;
 }
 .left-section .left-navbar div img {
   width: 100px;
@@ -320,22 +320,42 @@ a {
 .left-section .left-navbar .left-menu ul li a:hover {
   color: #000;
 }
-.left-section footer p {
+.left-section .left-navbar footer p {
   width: 80%;
   margin: 0 auto;
   letter-spacing: 1.2px;
   font-size: 0.85rem;
   color: #767676;
-  padding-top: 0.65rem;
+  padding-top: 2rem;
 }
-.left-section footer p span {
+.left-section .left-navbar footer p span {
   color: #999999;
+}
+
+input[type=checkbox] {
+  display: none;
 }
 
 @media (max-width: 1100px) {
   .left-section {
+    position: fixed;
+    right: 0;
+    height: 100%;
     display: none;
     border: none;
+    width: 200px;
+  }
+  .left-section .left-navbar {
+    position: relative;
+    top: 20%;
+  }
+  .left-section footer p {
+    position: relative;
+    top: 50%;
+  }
+
+  .left-section.open {
+    display: block;
   }
 }
 .right-section {
@@ -371,10 +391,11 @@ a {
 }
 .right-section section .home-section .home-header {
   margin-left: 1rem;
+  margin-bottom: 2rem;
 }
 .right-section section .home-section .home-header h2 {
   letter-spacing: 1.2px;
-  font-size: clamp(1.1rem, 4vw, 1.7rem);
+  font-size: clamp(1.3rem, 4vw, 1.9rem);
   line-height: 1.5;
 }
 .right-section section .home-section .home-header h3 {
@@ -406,12 +427,47 @@ section .home-section.show {
   visibility: visible;
 }
 
+.right-section .hamburger-menu {
+  position: fixed;
+  top: 40px;
+  right: 50px;
+  z-index: 999999;
+  display: none;
+}
+.right-section .hamburger-menu .line1,
+.right-section .hamburger-menu .line2,
+.right-section .hamburger-menu .line3 {
+  width: 35px;
+  height: 4px;
+  background-color: #000;
+  margin: 6px 0;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.right-section .hamburger-menu.visiable .line2 {
+  opacity: 0;
+}
+.right-section .hamburger-menu.visiable .line1 {
+  -webkit-transform: rotate(45deg) translate(9px, 5px);
+          transform: rotate(45deg) translate(9px, 5px);
+}
+.right-section .hamburger-menu.visiable .line3 {
+  -webkit-transform: rotate(-45deg) translate(10px, -5px);
+          transform: rotate(-45deg) translate(10px, -5px);
+}
+
 @media (max-width: 1100px) {
   .right-section {
     width: 100%;
   }
   .right-section section .home-section .home-header {
     width: 60%;
+  }
+
+  .right-section .hamburger-menu {
+    display: block;
   }
 }
 @media (max-width: 940px) {
@@ -529,7 +585,7 @@ section .home-section.show {
 }
 .about h2 {
   padding: 2rem 0 0 2rem;
-  font-size: clamp(1.1rem, 4vw, 1.7rem);
+  font-size: clamp(1.3rem, 4vw, 1.9rem);
 }
 .about .about-section {
   display: -webkit-box;
@@ -597,7 +653,8 @@ section .home-section.show {
             justify-content: space-evenly;
   }
   .about .about-section .kamlesh-about {
-    width: 90%;
+    width: 80%;
+    padding: 0;
   }
 }
 .portfolio {
@@ -618,7 +675,7 @@ section .home-section.show {
 .portfolio h2 {
   padding: 2rem;
   margin-bottom: 2rem;
-  font-size: clamp(1.1rem, 4vw, 1.7rem);
+  font-size: clamp(1.3rem, 4vw, 1.9rem);
 }
 .portfolio .portfolio-section .portfolio-1,
 .portfolio .portfolio-section .portfolio-3,
@@ -823,21 +880,25 @@ section .home-section.show {
 .portfolio .portfolio-section .portfolio-3 div {
     width: 90%;
     margin-bottom: 2rem;
+    padding: 0;
   }
   .portfolio .portfolio-section .portfolio-1 .textilee-info,
 .portfolio .portfolio-section .portfolio-1 .foodhub-info,
 .portfolio .portfolio-section .portfolio-3 .textilee-info,
 .portfolio .portfolio-section .portfolio-3 .foodhub-info {
+    padding: 0;
     width: 90%;
   }
   .portfolio .portfolio-section .portfolio-2 {
     margin-bottom: 1rem;
   }
   .portfolio .portfolio-section .portfolio-2 div {
+    padding: 0;
     width: 90%;
     margin-bottom: 2rem;
   }
   .portfolio .portfolio-section .portfolio-2 .news-info {
+    padding: 0;
     width: 90%;
   }
 }
@@ -858,6 +919,7 @@ section .home-section.show {
 }
 .skills h2 {
   padding: 2rem 0 0 2rem;
+  font-size: clamp(1.3rem, 4vw, 1.9rem);
 }
 .skills .skills-section .skills-list {
   display: -webkit-box;
@@ -887,6 +949,9 @@ section .home-section.show {
 }
 
 @media (max-width: 799px) {
+  .skills .skills-section .skills-list {
+    padding: 1rem;
+  }
   .skills .skills-section .skills-list li {
     margin: 1rem 1.5rem;
   }
@@ -932,7 +997,10 @@ section .home-section.show {
   font-size: clamp(0.75rem, 2vw, 0.9rem);
 }
 .get-in-touch-and-contact .get-in-touch .my-email {
+  text-decoration: underline;
+  letter-spacing: 1px;
   color: #000;
+  font-size: clamp(0.75rem, 2vw, 0.9rem);
 }
 .get-in-touch-and-contact .get-in-touch ul {
   display: -webkit-box;
@@ -953,8 +1021,9 @@ section .home-section.show {
 }
 .get-in-touch-and-contact .contact h2 {
   letter-spacing: 1px;
-  font-size: clamp(1.3rem, 4vw, 2.2rem);
+  font-size: clamp(1.3rem, 4vw, 1.9rem);
   font-weight: 700;
+  margin-top: 2rem;
 }
 .get-in-touch-and-contact .contact form input {
   display: block;
@@ -1068,5 +1137,14 @@ section .home-section.show {
   }
   .get-in-touch-and-contact .contact form button {
     margin-top: 0.5rem;
+  }
+}
+@media (max-width: 675px) {
+  .get-in-touch-and-contact .get-in-touch {
+    width: 90%;
+  }
+  .get-in-touch-and-contact .contact {
+    padding: 0;
+    width: 90%;
   }
 }

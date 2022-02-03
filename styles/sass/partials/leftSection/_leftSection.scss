@@ -1,17 +1,17 @@
 .left-section{
     background: $whiteColor;
     width: 20vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     z-index: 99999;
     border-right: 1px solid $lightSecondaryColor;
     overflow-y: hidden;
     
     .left-navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         position: relative;
-        top: -50px;
+        top: 25%;
         div img{
             width: 100px;
         }
@@ -32,25 +32,42 @@
                 }
             }
         }
-    }
-    footer p {
-        width: 80%;
-        margin: 0 auto;
-        letter-spacing: 1.2px;
-        font-size: 0.85rem;
-        color: $secondaryColor;
-        padding-top:0.65rem ;
-        span{
-            color: $lightSecondaryColor;
+        footer p {
+            width: 80%;
+            margin: 0 auto;
+            letter-spacing: 1.2px;
+            font-size: 0.85rem;
+            color: $secondaryColor;
+            padding-top:2rem ;
+            span{
+                color: $lightSecondaryColor;
+            }
         }
     }
+}
+input[type="checkbox"]{
+    display: none;
 }
 
 // Media query for left section
 @media (max-width:1100px){
     .left-section{
+        position: fixed;
+        right: 0;
+        height: 100%;
         display: none;
         border: none;
+        width: 200px;
+        .left-navbar{
+            position: relative;
+            top: 20%;
+        }
+        footer p{
+            position: relative;
+            top: 50%;
+        } 
     }
-    
+    .left-section.open{
+        display: block;
+    }
 }

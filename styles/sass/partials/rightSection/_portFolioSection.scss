@@ -15,7 +15,7 @@
     h2{
         padding: 2rem;
         margin-bottom: 2rem;
-        font-size:clamp(1.1rem, 4vw, 1.7rem);
+        font-size:clamp(1.3rem, 4vw, 1.9rem);
     }
     .portfolio-section{
         .portfolio-1,
@@ -137,19 +137,23 @@
             div{
                 width: 90%;
                 margin-bottom: 2rem;
+                padding: 0;
             }
             .textilee-info,
             .foodhub-info{
+                padding: 0;
                 width: 90%;
             }
         }
         .portfolio-2{
             margin-bottom: 1rem;
             div{
+                padding: 0;
                 width: 90%;
                 margin-bottom: 2rem;
             }
             .news-info{
+                padding: 0;
                 width: 90%;
             }
         }
