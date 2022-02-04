@@ -39,6 +39,7 @@
         .home-header{
             margin-left: 1rem;
             margin-bottom: 2rem;
+
             h2{
                 letter-spacing: 1.2px;
                 font-size:clamp(1.3rem, 4vw, 1.9rem);
@@ -47,7 +48,7 @@
             h3{
                 letter-spacing: 1px;
                 font-style:italic;
-                font-size: clamp(0.9rem, 2vw, 1.2rem);
+                font-size: clamp(0.9rem, 2vw, 1.1rem);
                 margin-top: 2rem;
                 color: $secondaryColor;
                 font-family: $secondaryFontFamily;
@@ -69,10 +70,13 @@
         }
     }
 }
+// styling to show home section on click of home link.
 section .home-section.show{
     opacity: 1;
     visibility: visible;
 }
+
+// hamburger button styling for small screen 
 .right-section .hamburger-menu{
     position: fixed;
     top: 13px;
@@ -92,7 +96,8 @@ section .home-section.show{
       transition: all 0.2s ease-in-out; 
     }
 }
-.right-section .hamburger-menu.visiable{
+// on click hamburger menu transform in to close button
+.right-section .hamburger-menu.visible{
     .line2{
       opacity: 0;
     }
@@ -104,7 +109,7 @@ section .home-section.show{
   }
 }
 
-
+// media query for small screen
 // media query for 1100px
 @media (max-width:1100px){
     .right-section{
@@ -122,6 +127,8 @@ section .home-section.show{
       display: block;
     }
 }
+
+// media query for 940px
 @media (max-width:940px){
    .right-section section .home-section{
      display: flex;
@@ -148,7 +155,7 @@ section .home-section.show{
 
 
 
-// animation for coding animation svg ,
+// animation for svg on home page ,
 //  code reference get from codepen @m-abdelwahab
 #coding {
   margin: 0 auto;

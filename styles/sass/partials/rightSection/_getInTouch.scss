@@ -100,11 +100,12 @@
         }
     }
 }
+// show get in touch section on click
 .get-in-touch-and-contact.show{
     opacity: 1;
     visibility: visible;
 }
-
+// media query start here
 // media query for 875px
 @media (max-width:875px){
     .get-in-touch-and-contact{
@@ -129,6 +130,7 @@
         }
     }
 }
+// media query for 675px
 @media (max-width:675px){
     .get-in-touch-and-contact{
         .get-in-touch{

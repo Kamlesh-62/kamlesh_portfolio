@@ -33,11 +33,14 @@
         }
     }
 }
+// show skills section on click
 .skills.show{
     opacity: 1;
     visibility: visible;
 }
-// media queru for 800px
+
+// media query start styling
+// media query for 800px
 @media (max-width:799px){
     .skills{
         .skills-section{

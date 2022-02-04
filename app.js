@@ -1,7 +1,7 @@
 const init = () => {
     clickEvent()
 }
-//  on individual navbar link click show particular section...
+//  list of left side and hamburger button
 const homeLink = document.querySelector(".home-link");
 const aboutLink = document.querySelector(".about-link");
 const portfolioLink = document.querySelector(".portfolio-link");
@@ -19,8 +19,8 @@ const portfolioSection = document.querySelector(".portfolio");
 const menu = document.querySelector(".left-section");
 const closeNavbar = document.querySelector(".left-section")
 
+// click function.
 const clickEvent = () =>{
-    // 
     homeLink.addEventListener("click", function(){
         homeSection.classList.add("show")
         aboutSection.classList.remove("show")
@@ -28,7 +28,7 @@ const clickEvent = () =>{
         skillsSection.classList.remove("show")
         contactSection.classList.remove("show")
         closeNavbar.classList.remove("open")
-        hamburgerButton.classList.toggle("visiable")
+        hamburgerButton.classList.toggle("visible")
     })
     aboutLink.addEventListener("click", function(e){
         homeSection.classList.remove("show")
@@ -37,7 +37,7 @@ const clickEvent = () =>{
         skillsSection.classList.remove("show")
         contactSection.classList.remove("show")
         closeNavbar.classList.remove("open")
-        hamburgerButton.classList.toggle("visiable")
+        hamburgerButton.classList.toggle("visible")
     })
     portfolioLink.addEventListener("click", function(e){
         homeSection.classList.remove("show")
@@ -46,7 +46,7 @@ const clickEvent = () =>{
         skillsSection.classList.remove("show")
         contactSection.classList.remove("show")
         closeNavbar.classList.remove("open")
-        hamburgerButton.classList.toggle("visiable")
+        hamburgerButton.classList.toggle("visible")
     })
     skillsLink.addEventListener("click", function(e){
         homeSection.classList.remove("show")
@@ -55,7 +55,7 @@ const clickEvent = () =>{
         skillsSection.classList.add("show")
         contactSection.classList.remove("show")
         closeNavbar.classList.remove("open")
-        hamburgerButton.classList.toggle("visiable")
+        hamburgerButton.classList.toggle("visible")
     })
     contactLink.addEventListener("click", function(e){
         homeSection.classList.remove("show")
@@ -64,11 +64,11 @@ const clickEvent = () =>{
         skillsSection.classList.remove("show")
         contactSection.classList.add("show")
         closeNavbar.classList.remove("open")
-        hamburgerButton.classList.toggle("visiable")
+        hamburgerButton.classList.toggle("visible")
     })
     
     hamburgerButton.addEventListener("click", function(){
-        hamburgerButton.classList.toggle("visiable")
+        hamburgerButton.classList.toggle("visible")
         menu.classList.toggle("open")
     }) 
 }

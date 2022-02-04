@@ -408,7 +408,7 @@ a {
 .right-section section .home-section .home-header h3 {
   letter-spacing: 1px;
   font-style: italic;
-  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
   margin-top: 2rem;
   color: #767676;
   font-family: "Mulish", sans-serif;
@@ -455,14 +455,14 @@ section .home-section.show {
   transition: all 0.2s ease-in-out;
 }
 
-.right-section .hamburger-menu.visiable .line2 {
+.right-section .hamburger-menu.visible .line2 {
   opacity: 0;
 }
-.right-section .hamburger-menu.visiable .line1 {
+.right-section .hamburger-menu.visible .line1 {
   -webkit-transform: rotate(45deg) translate(9px, 5px);
           transform: rotate(45deg) translate(9px, 5px);
 }
-.right-section .hamburger-menu.visiable .line3 {
+.right-section .hamburger-menu.visible .line3 {
   -webkit-transform: rotate(-45deg) translate(10px, -5px);
           transform: rotate(-45deg) translate(10px, -5px);
 }
@@ -601,6 +601,9 @@ section .home-section.show {
   display: -ms-flexbox;
   display: flex;
   margin: 2rem 2rem;
+}
+.about .about-section .kamlesh-picture {
+  margin-top: 2rem;
 }
 .about .about-section .kamlesh-picture img {
   width: 350px;

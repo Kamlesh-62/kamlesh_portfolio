@@ -22,6 +22,7 @@
         margin: 2rem 2rem;
         
         .kamlesh-picture{
+            margin-top: 2rem;
             img{
                 width: 350px;
                 height: 350px;
@@ -65,10 +66,12 @@
         }
     }
 }
+// show section on about click styling
 .about.show{
     opacity: 1;
     visibility: visible;
 }
+// media query for small screen
 // media query for 940px
 @media (max-width:940px){
     .about .about-section{
@@ -84,6 +87,7 @@
         }
     }
 }
+// media query for 680px
 @media (max-width:680px){
     .about .about-section{
         .kamlesh-about{
@@ -101,6 +105,7 @@
         }
     }
 }
+// kamlesh image animation 
 @keyframes morph {
 	 0% {
 		 border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
