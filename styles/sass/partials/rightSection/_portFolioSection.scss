@@ -69,6 +69,7 @@
                             font-size: 0.90rem;
                             color: $whiteColor;
                             background-color: $blackColor;
+                            transition: all 0.2s ease-in;
                             &:hover{
                                 background-color: $greyColor;
                                 color: $blackColor;

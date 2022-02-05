@@ -43,6 +43,9 @@
                 font-size: 2rem;
                 cursor: pointer;
                 color: $blackColor;
+                &:hover{
+                    transform: scale(1.05);
+                }
             }
         }
     }
@@ -92,6 +95,7 @@
                 color: $whiteColor;
                 border: 2px solid $blackColor;
                 margin-top: 2rem;
+                transition: all 0.2s ease-in;
                 &:hover{
                     background: $greyColor;
                     color: $blackColor;

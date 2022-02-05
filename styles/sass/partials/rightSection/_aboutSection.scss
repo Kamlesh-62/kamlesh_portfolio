@@ -56,6 +56,7 @@
                     background-color: $blackColor;
                     color: $whiteColor;
                     margin-top: 1.5rem;
+                    transition: all 0.2s ease-in;
 
                     &:hover{
                         color: $blackColor;

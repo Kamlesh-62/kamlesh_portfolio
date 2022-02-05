@@ -424,10 +424,14 @@ a {
   width: 60%;
   margin: 2rem auto;
 }
-.right-section section .home-section .home-header ul li a {
+.right-section section .home-section .home-header ul li a i {
   font-size: 2rem;
   color: #000;
   cursor: pointer;
+}
+.right-section section .home-section .home-header ul li a i:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 section .home-section.show {
@@ -641,6 +645,8 @@ section .home-section.show {
   background-color: #000;
   color: #fff;
   margin-top: 1.5rem;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 .about .about-section .kamlesh-about div span a:hover {
   color: #000;
@@ -840,6 +846,8 @@ section .home-section.show {
   font-size: 0.9rem;
   color: #fff;
   background-color: #000;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 .portfolio .portfolio-section .portfolio-1 .textilee-info ul li span a:hover,
 .portfolio .portfolio-section .portfolio-1 .foodhub-info ul li span a:hover,
@@ -1058,6 +1066,10 @@ section .home-section.show {
   cursor: pointer;
   color: #000;
 }
+.get-in-touch-and-contact .get-in-touch ul li a i:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
 .get-in-touch-and-contact .contact {
   width: 50%;
   padding: 1rem;
@@ -1151,6 +1163,8 @@ section .home-section.show {
   color: #fff;
   border: 2px solid #000;
   margin-top: 2rem;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 .get-in-touch-and-contact .contact form button:hover {
   background: #f1f1f1;
