@@ -30,7 +30,7 @@ const clickEvent = () =>{
         closeNavbar.classList.remove("open")
         hamburgerButton.classList.toggle("visible")
     })
-    aboutLink.addEventListener("click", function(e){
+    aboutLink.addEventListener("click", function(){
         homeSection.classList.remove("show")
         aboutSection.classList.add("show")
         portfolioSection.classList.remove("show")
@@ -39,7 +39,7 @@ const clickEvent = () =>{
         closeNavbar.classList.remove("open")
         hamburgerButton.classList.toggle("visible")
     })
-    portfolioLink.addEventListener("click", function(e){
+    portfolioLink.addEventListener("click", function(){
         homeSection.classList.remove("show")
         aboutSection.classList.remove("show")
         portfolioSection.classList.add("show")
@@ -48,7 +48,7 @@ const clickEvent = () =>{
         closeNavbar.classList.remove("open")
         hamburgerButton.classList.toggle("visible")
     })
-    skillsLink.addEventListener("click", function(e){
+    skillsLink.addEventListener("click", function(){
         homeSection.classList.remove("show")
         aboutSection.classList.remove("show")
         portfolioSection.classList.remove("show")
@@ -57,7 +57,7 @@ const clickEvent = () =>{
         closeNavbar.classList.remove("open")
         hamburgerButton.classList.toggle("visible")
     })
-    contactLink.addEventListener("click", function(e){
+    contactLink.addEventListener("click", function(){
         homeSection.classList.remove("show")
         aboutSection.classList.remove("show")
         portfolioSection.classList.remove("show")
