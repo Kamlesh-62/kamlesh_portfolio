@@ -359,7 +359,6 @@ a {
   overflow-y: hidden;
 }
 .right-section .right-section-logo {
-  position: sticky;
   width: 100%;
   background: #fff;
   z-index: 10000;
@@ -634,7 +633,7 @@ section .home-section.show {
   line-height: 1.5;
   font-family: "Mulish", sans-serif;
   color: #767676;
-  font-size: clamp(0.80rem, 2vw, 1rem);
+  font-size: clamp(0.8rem, 2vw, 1rem);
 }
 .about .about-section .kamlesh-about div {
   margin-top: 1.5rem;
@@ -787,7 +786,7 @@ section .home-section.show {
   letter-spacing: 1.1px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: clamp(0.80rem, 1.5vw, .95rem);
+  font-size: clamp(0.8rem, 1.5vw, 0.95rem);
   color: #767676;
   margin-top: 1rem;
   line-height: 1.5;
@@ -805,7 +804,7 @@ section .home-section.show {
   line-height: 1.5;
   font-style: italic;
   font-weight: 400;
-  font-size: clamp(0.80rem, 1.5vw, .95rem);
+  font-size: clamp(0.8rem, 1.5vw, 0.95rem);
 }
 .portfolio .portfolio-section .portfolio-1 .textilee-info ul,
 .portfolio .portfolio-section .portfolio-1 .foodhub-info ul,
@@ -989,11 +988,14 @@ section .home-section.show {
   padding: 2rem;
 }
 .skills .skills-section .skills-list li {
-  margin: 2rem 2.5rem;
+  margin: 1.5rem 2rem;
   text-align: center;
 }
 .skills .skills-section .skills-list li span i {
-  font-size: clamp(3rem , 8vw, 4rem);
+  font-size: clamp(3rem, 8vw, 4rem);
+}
+.skills .skills-section h2 {
+  margin: 2rem 0 0rem 2rem;
 }
 
 .skills.show {
