@@ -100,6 +100,7 @@
     .portfolio .portfolio-section{
         .portfolio-1,
         .portfolio-3,
+        .portfolio-4
         .portfolio-2{
         
             div{
@@ -107,7 +108,8 @@
             }
             .textilee-info,
             .foodhub-info,
-            .news-info{
+            .news-info,
+            .moneyTracker-info{
                 padding: 0 0 0 1.5rem;
             }
         }
@@ -129,14 +131,16 @@
                 width: 70%;
             }
         }
-        .portfolio-2{
+        .portfolio-2,
+        .portfolio-4{
             flex-direction: column-reverse;
             align-items: center;
             div{
                 width: 70%;
                 margin-bottom: 1rem;
             }
-            .news-info{
+            .news-info,
+            .moneyTracker-info{
                 width: 70%;
             }
         }
@@ -159,14 +163,16 @@
                 width: 90%;
             }
         }
-        .portfolio-2{
+        .portfolio-2,
+        .portfolio-4{
             margin-bottom: 1rem;
             div{
                 padding: 0;
                 width: 90%;
                 margin-bottom: 2rem;
             }
-            .news-info{
+            .news-info,
+            .moneyTracker-info{
                 padding: 0;
                 width: 90%;
             }
