@@ -727,6 +727,7 @@ section .home-section.show {
   margin-bottom: 2rem;
   font-size: clamp(1.3rem, 4vw, 1.9rem);
 }
+.portfolio .portfolio-section .portfolio-5,
 .portfolio .portfolio-section .portfolio-4,
 .portfolio .portfolio-section .portfolio-3,
 .portfolio .portfolio-section .portfolio-2,
@@ -738,6 +739,7 @@ section .home-section.show {
       justify-content: space-around;
   margin-bottom: 7rem;
 }
+.portfolio .portfolio-section .portfolio-5 div,
 .portfolio .portfolio-section .portfolio-4 div,
 .portfolio .portfolio-section .portfolio-3 div,
 .portfolio .portfolio-section .portfolio-2 div,
@@ -745,6 +747,7 @@ section .home-section.show {
   width: 50%;
   padding: 0 2rem;
 }
+.portfolio .portfolio-section .portfolio-5 div img,
 .portfolio .portfolio-section .portfolio-4 div img,
 .portfolio .portfolio-section .portfolio-3 div img,
 .portfolio .portfolio-section .portfolio-2 div img,
@@ -753,18 +756,27 @@ section .home-section.show {
   border: 2px solid #000;
   position: relative;
 }
+.portfolio .portfolio-section .portfolio-5 .tracker-info,
+.portfolio .portfolio-section .portfolio-5 .textilee-info,
+.portfolio .portfolio-section .portfolio-5 .foodhub-info,
+.portfolio .portfolio-section .portfolio-5 .news-info,
+.portfolio .portfolio-section .portfolio-5 .moneyTracker-info,
+.portfolio .portfolio-section .portfolio-4 .tracker-info,
 .portfolio .portfolio-section .portfolio-4 .textilee-info,
 .portfolio .portfolio-section .portfolio-4 .foodhub-info,
 .portfolio .portfolio-section .portfolio-4 .news-info,
 .portfolio .portfolio-section .portfolio-4 .moneyTracker-info,
+.portfolio .portfolio-section .portfolio-3 .tracker-info,
 .portfolio .portfolio-section .portfolio-3 .textilee-info,
 .portfolio .portfolio-section .portfolio-3 .foodhub-info,
 .portfolio .portfolio-section .portfolio-3 .news-info,
 .portfolio .portfolio-section .portfolio-3 .moneyTracker-info,
+.portfolio .portfolio-section .portfolio-2 .tracker-info,
 .portfolio .portfolio-section .portfolio-2 .textilee-info,
 .portfolio .portfolio-section .portfolio-2 .foodhub-info,
 .portfolio .portfolio-section .portfolio-2 .news-info,
 .portfolio .portfolio-section .portfolio-2 .moneyTracker-info,
+.portfolio .portfolio-section .portfolio-1 .tracker-info,
 .portfolio .portfolio-section .portfolio-1 .textilee-info,
 .portfolio .portfolio-section .portfolio-1 .foodhub-info,
 .portfolio .portfolio-section .portfolio-1 .news-info,
@@ -772,18 +784,27 @@ section .home-section.show {
   width: 50%;
   padding: 0 2rem;
 }
+.portfolio .portfolio-section .portfolio-5 .tracker-info h3,
+.portfolio .portfolio-section .portfolio-5 .textilee-info h3,
+.portfolio .portfolio-section .portfolio-5 .foodhub-info h3,
+.portfolio .portfolio-section .portfolio-5 .news-info h3,
+.portfolio .portfolio-section .portfolio-5 .moneyTracker-info h3,
+.portfolio .portfolio-section .portfolio-4 .tracker-info h3,
 .portfolio .portfolio-section .portfolio-4 .textilee-info h3,
 .portfolio .portfolio-section .portfolio-4 .foodhub-info h3,
 .portfolio .portfolio-section .portfolio-4 .news-info h3,
 .portfolio .portfolio-section .portfolio-4 .moneyTracker-info h3,
+.portfolio .portfolio-section .portfolio-3 .tracker-info h3,
 .portfolio .portfolio-section .portfolio-3 .textilee-info h3,
 .portfolio .portfolio-section .portfolio-3 .foodhub-info h3,
 .portfolio .portfolio-section .portfolio-3 .news-info h3,
 .portfolio .portfolio-section .portfolio-3 .moneyTracker-info h3,
+.portfolio .portfolio-section .portfolio-2 .tracker-info h3,
 .portfolio .portfolio-section .portfolio-2 .textilee-info h3,
 .portfolio .portfolio-section .portfolio-2 .foodhub-info h3,
 .portfolio .portfolio-section .portfolio-2 .news-info h3,
 .portfolio .portfolio-section .portfolio-2 .moneyTracker-info h3,
+.portfolio .portfolio-section .portfolio-1 .tracker-info h3,
 .portfolio .portfolio-section .portfolio-1 .textilee-info h3,
 .portfolio .portfolio-section .portfolio-1 .foodhub-info h3,
 .portfolio .portfolio-section .portfolio-1 .news-info h3,
@@ -791,18 +812,27 @@ section .home-section.show {
   font-size: clamp(1rem, 2vw, 1.2rem);
   letter-spacing: 1.1px;
 }
+.portfolio .portfolio-section .portfolio-5 .tracker-info p,
+.portfolio .portfolio-section .portfolio-5 .textilee-info p,
+.portfolio .portfolio-section .portfolio-5 .foodhub-info p,
+.portfolio .portfolio-section .portfolio-5 .news-info p,
+.portfolio .portfolio-section .portfolio-5 .moneyTracker-info p,
+.portfolio .portfolio-section .portfolio-4 .tracker-info p,
 .portfolio .portfolio-section .portfolio-4 .textilee-info p,
 .portfolio .portfolio-section .portfolio-4 .foodhub-info p,
 .portfolio .portfolio-section .portfolio-4 .news-info p,
 .portfolio .portfolio-section .portfolio-4 .moneyTracker-info p,
+.portfolio .portfolio-section .portfolio-3 .tracker-info p,
 .portfolio .portfolio-section .portfolio-3 .textilee-info p,
 .portfolio .portfolio-section .portfolio-3 .foodhub-info p,
 .portfolio .portfolio-section .portfolio-3 .news-info p,
 .portfolio .portfolio-section .portfolio-3 .moneyTracker-info p,
+.portfolio .portfolio-section .portfolio-2 .tracker-info p,
 .portfolio .portfolio-section .portfolio-2 .textilee-info p,
 .portfolio .portfolio-section .portfolio-2 .foodhub-info p,
 .portfolio .portfolio-section .portfolio-2 .news-info p,
 .portfolio .portfolio-section .portfolio-2 .moneyTracker-info p,
+.portfolio .portfolio-section .portfolio-1 .tracker-info p,
 .portfolio .portfolio-section .portfolio-1 .textilee-info p,
 .portfolio .portfolio-section .portfolio-1 .foodhub-info p,
 .portfolio .portfolio-section .portfolio-1 .news-info p,
@@ -815,18 +845,27 @@ section .home-section.show {
   margin-top: 1rem;
   line-height: 1.5;
 }
+.portfolio .portfolio-section .portfolio-5 .tracker-info p.project-details,
+.portfolio .portfolio-section .portfolio-5 .textilee-info p.project-details,
+.portfolio .portfolio-section .portfolio-5 .foodhub-info p.project-details,
+.portfolio .portfolio-section .portfolio-5 .news-info p.project-details,
+.portfolio .portfolio-section .portfolio-5 .moneyTracker-info p.project-details,
+.portfolio .portfolio-section .portfolio-4 .tracker-info p.project-details,
 .portfolio .portfolio-section .portfolio-4 .textilee-info p.project-details,
 .portfolio .portfolio-section .portfolio-4 .foodhub-info p.project-details,
 .portfolio .portfolio-section .portfolio-4 .news-info p.project-details,
 .portfolio .portfolio-section .portfolio-4 .moneyTracker-info p.project-details,
+.portfolio .portfolio-section .portfolio-3 .tracker-info p.project-details,
 .portfolio .portfolio-section .portfolio-3 .textilee-info p.project-details,
 .portfolio .portfolio-section .portfolio-3 .foodhub-info p.project-details,
 .portfolio .portfolio-section .portfolio-3 .news-info p.project-details,
 .portfolio .portfolio-section .portfolio-3 .moneyTracker-info p.project-details,
+.portfolio .portfolio-section .portfolio-2 .tracker-info p.project-details,
 .portfolio .portfolio-section .portfolio-2 .textilee-info p.project-details,
 .portfolio .portfolio-section .portfolio-2 .foodhub-info p.project-details,
 .portfolio .portfolio-section .portfolio-2 .news-info p.project-details,
 .portfolio .portfolio-section .portfolio-2 .moneyTracker-info p.project-details,
+.portfolio .portfolio-section .portfolio-1 .tracker-info p.project-details,
 .portfolio .portfolio-section .portfolio-1 .textilee-info p.project-details,
 .portfolio .portfolio-section .portfolio-1 .foodhub-info p.project-details,
 .portfolio .portfolio-section .portfolio-1 .news-info p.project-details,
@@ -837,18 +876,27 @@ section .home-section.show {
   font-weight: 400;
   font-size: clamp(0.8rem, 1.5vw, 0.95rem);
 }
+.portfolio .portfolio-section .portfolio-5 .tracker-info ul,
+.portfolio .portfolio-section .portfolio-5 .textilee-info ul,
+.portfolio .portfolio-section .portfolio-5 .foodhub-info ul,
+.portfolio .portfolio-section .portfolio-5 .news-info ul,
+.portfolio .portfolio-section .portfolio-5 .moneyTracker-info ul,
+.portfolio .portfolio-section .portfolio-4 .tracker-info ul,
 .portfolio .portfolio-section .portfolio-4 .textilee-info ul,
 .portfolio .portfolio-section .portfolio-4 .foodhub-info ul,
 .portfolio .portfolio-section .portfolio-4 .news-info ul,
 .portfolio .portfolio-section .portfolio-4 .moneyTracker-info ul,
+.portfolio .portfolio-section .portfolio-3 .tracker-info ul,
 .portfolio .portfolio-section .portfolio-3 .textilee-info ul,
 .portfolio .portfolio-section .portfolio-3 .foodhub-info ul,
 .portfolio .portfolio-section .portfolio-3 .news-info ul,
 .portfolio .portfolio-section .portfolio-3 .moneyTracker-info ul,
+.portfolio .portfolio-section .portfolio-2 .tracker-info ul,
 .portfolio .portfolio-section .portfolio-2 .textilee-info ul,
 .portfolio .portfolio-section .portfolio-2 .foodhub-info ul,
 .portfolio .portfolio-section .portfolio-2 .news-info ul,
 .portfolio .portfolio-section .portfolio-2 .moneyTracker-info ul,
+.portfolio .portfolio-section .portfolio-1 .tracker-info ul,
 .portfolio .portfolio-section .portfolio-1 .textilee-info ul,
 .portfolio .portfolio-section .portfolio-1 .foodhub-info ul,
 .portfolio .portfolio-section .portfolio-1 .news-info ul,
@@ -858,36 +906,54 @@ section .home-section.show {
   display: flex;
   margin-top: 2rem;
 }
+.portfolio .portfolio-section .portfolio-5 .tracker-info ul li,
+.portfolio .portfolio-section .portfolio-5 .textilee-info ul li,
+.portfolio .portfolio-section .portfolio-5 .foodhub-info ul li,
+.portfolio .portfolio-section .portfolio-5 .news-info ul li,
+.portfolio .portfolio-section .portfolio-5 .moneyTracker-info ul li,
+.portfolio .portfolio-section .portfolio-4 .tracker-info ul li,
 .portfolio .portfolio-section .portfolio-4 .textilee-info ul li,
 .portfolio .portfolio-section .portfolio-4 .foodhub-info ul li,
 .portfolio .portfolio-section .portfolio-4 .news-info ul li,
 .portfolio .portfolio-section .portfolio-4 .moneyTracker-info ul li,
+.portfolio .portfolio-section .portfolio-3 .tracker-info ul li,
 .portfolio .portfolio-section .portfolio-3 .textilee-info ul li,
 .portfolio .portfolio-section .portfolio-3 .foodhub-info ul li,
 .portfolio .portfolio-section .portfolio-3 .news-info ul li,
 .portfolio .portfolio-section .portfolio-3 .moneyTracker-info ul li,
+.portfolio .portfolio-section .portfolio-2 .tracker-info ul li,
 .portfolio .portfolio-section .portfolio-2 .textilee-info ul li,
 .portfolio .portfolio-section .portfolio-2 .foodhub-info ul li,
 .portfolio .portfolio-section .portfolio-2 .news-info ul li,
 .portfolio .portfolio-section .portfolio-2 .moneyTracker-info ul li,
+.portfolio .portfolio-section .portfolio-1 .tracker-info ul li,
 .portfolio .portfolio-section .portfolio-1 .textilee-info ul li,
 .portfolio .portfolio-section .portfolio-1 .foodhub-info ul li,
 .portfolio .portfolio-section .portfolio-1 .news-info ul li,
 .portfolio .portfolio-section .portfolio-1 .moneyTracker-info ul li {
   margin-right: 1rem;
 }
+.portfolio .portfolio-section .portfolio-5 .tracker-info ul li span a,
+.portfolio .portfolio-section .portfolio-5 .textilee-info ul li span a,
+.portfolio .portfolio-section .portfolio-5 .foodhub-info ul li span a,
+.portfolio .portfolio-section .portfolio-5 .news-info ul li span a,
+.portfolio .portfolio-section .portfolio-5 .moneyTracker-info ul li span a,
+.portfolio .portfolio-section .portfolio-4 .tracker-info ul li span a,
 .portfolio .portfolio-section .portfolio-4 .textilee-info ul li span a,
 .portfolio .portfolio-section .portfolio-4 .foodhub-info ul li span a,
 .portfolio .portfolio-section .portfolio-4 .news-info ul li span a,
 .portfolio .portfolio-section .portfolio-4 .moneyTracker-info ul li span a,
+.portfolio .portfolio-section .portfolio-3 .tracker-info ul li span a,
 .portfolio .portfolio-section .portfolio-3 .textilee-info ul li span a,
 .portfolio .portfolio-section .portfolio-3 .foodhub-info ul li span a,
 .portfolio .portfolio-section .portfolio-3 .news-info ul li span a,
 .portfolio .portfolio-section .portfolio-3 .moneyTracker-info ul li span a,
+.portfolio .portfolio-section .portfolio-2 .tracker-info ul li span a,
 .portfolio .portfolio-section .portfolio-2 .textilee-info ul li span a,
 .portfolio .portfolio-section .portfolio-2 .foodhub-info ul li span a,
 .portfolio .portfolio-section .portfolio-2 .news-info ul li span a,
 .portfolio .portfolio-section .portfolio-2 .moneyTracker-info ul li span a,
+.portfolio .portfolio-section .portfolio-1 .tracker-info ul li span a,
 .portfolio .portfolio-section .portfolio-1 .textilee-info ul li span a,
 .portfolio .portfolio-section .portfolio-1 .foodhub-info ul li span a,
 .portfolio .portfolio-section .portfolio-1 .news-info ul li span a,
@@ -900,24 +966,50 @@ section .home-section.show {
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
+.portfolio .portfolio-section .portfolio-5 .tracker-info ul li span a:hover,
+.portfolio .portfolio-section .portfolio-5 .textilee-info ul li span a:hover,
+.portfolio .portfolio-section .portfolio-5 .foodhub-info ul li span a:hover,
+.portfolio .portfolio-section .portfolio-5 .news-info ul li span a:hover,
+.portfolio .portfolio-section .portfolio-5 .moneyTracker-info ul li span a:hover,
+.portfolio .portfolio-section .portfolio-4 .tracker-info ul li span a:hover,
 .portfolio .portfolio-section .portfolio-4 .textilee-info ul li span a:hover,
 .portfolio .portfolio-section .portfolio-4 .foodhub-info ul li span a:hover,
 .portfolio .portfolio-section .portfolio-4 .news-info ul li span a:hover,
 .portfolio .portfolio-section .portfolio-4 .moneyTracker-info ul li span a:hover,
+.portfolio .portfolio-section .portfolio-3 .tracker-info ul li span a:hover,
 .portfolio .portfolio-section .portfolio-3 .textilee-info ul li span a:hover,
 .portfolio .portfolio-section .portfolio-3 .foodhub-info ul li span a:hover,
 .portfolio .portfolio-section .portfolio-3 .news-info ul li span a:hover,
 .portfolio .portfolio-section .portfolio-3 .moneyTracker-info ul li span a:hover,
+.portfolio .portfolio-section .portfolio-2 .tracker-info ul li span a:hover,
 .portfolio .portfolio-section .portfolio-2 .textilee-info ul li span a:hover,
 .portfolio .portfolio-section .portfolio-2 .foodhub-info ul li span a:hover,
 .portfolio .portfolio-section .portfolio-2 .news-info ul li span a:hover,
 .portfolio .portfolio-section .portfolio-2 .moneyTracker-info ul li span a:hover,
+.portfolio .portfolio-section .portfolio-1 .tracker-info ul li span a:hover,
 .portfolio .portfolio-section .portfolio-1 .textilee-info ul li span a:hover,
 .portfolio .portfolio-section .portfolio-1 .foodhub-info ul li span a:hover,
 .portfolio .portfolio-section .portfolio-1 .news-info ul li span a:hover,
 .portfolio .portfolio-section .portfolio-1 .moneyTracker-info ul li span a:hover {
   background-color: #f1f1f1;
   color: #000;
+}
+.portfolio .portfolio-section .portfolio-5 .project-5-imageGrid,
+.portfolio .portfolio-section .portfolio-4 .project-5-imageGrid,
+.portfolio .portfolio-section .portfolio-3 .project-5-imageGrid,
+.portfolio .portfolio-section .portfolio-2 .project-5-imageGrid,
+.portfolio .portfolio-section .portfolio-1 .project-5-imageGrid {
+  width: 50%;
+  padding: 0 2rem;
+}
+.portfolio .portfolio-section .portfolio-5 .project-5-imageGrid img,
+.portfolio .portfolio-section .portfolio-4 .project-5-imageGrid img,
+.portfolio .portfolio-section .portfolio-3 .project-5-imageGrid img,
+.portfolio .portfolio-section .portfolio-2 .project-5-imageGrid img,
+.portfolio .portfolio-section .portfolio-1 .project-5-imageGrid img {
+  width: 100%;
+  border: 2px solid #000;
+  position: relative;
 }
 
 .portfolio.show {

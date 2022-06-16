@@ -19,6 +19,7 @@
 
     }
     .portfolio-section{
+        .portfolio-5,
         .portfolio-4,
         .portfolio-3,
         .portfolio-2,
@@ -35,6 +36,7 @@
                     position: relative;
                 }
             }
+            .tracker-info,
             .textilee-info,
             .foodhub-info,
             .news-info,
@@ -79,6 +81,16 @@
                             }
                         }
                     }
+                }
+            }
+            .project-5-imageGrid{
+                // display: flex;
+                width: 50%;
+                padding: 0 2rem;
+                img {
+                    width: 100%;
+                    border: 2px solid $blackColor;
+                    position: relative;
                 }
             }
         }
