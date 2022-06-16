@@ -994,23 +994,6 @@ section .home-section.show {
   background-color: #f1f1f1;
   color: #000;
 }
-.portfolio .portfolio-section .portfolio-5 .project-5-imageGrid,
-.portfolio .portfolio-section .portfolio-4 .project-5-imageGrid,
-.portfolio .portfolio-section .portfolio-3 .project-5-imageGrid,
-.portfolio .portfolio-section .portfolio-2 .project-5-imageGrid,
-.portfolio .portfolio-section .portfolio-1 .project-5-imageGrid {
-  width: 50%;
-  padding: 0 2rem;
-}
-.portfolio .portfolio-section .portfolio-5 .project-5-imageGrid img,
-.portfolio .portfolio-section .portfolio-4 .project-5-imageGrid img,
-.portfolio .portfolio-section .portfolio-3 .project-5-imageGrid img,
-.portfolio .portfolio-section .portfolio-2 .project-5-imageGrid img,
-.portfolio .portfolio-section .portfolio-1 .project-5-imageGrid img {
-  width: 100%;
-  border: 2px solid #000;
-  position: relative;
-}
 
 .portfolio.show {
   opacity: 1;
@@ -1019,27 +1002,43 @@ section .home-section.show {
 
 @media (max-width: 1048px) {
   .portfolio .portfolio-section .portfolio-1 div,
+.portfolio .portfolio-section .portfolio-2 div,
 .portfolio .portfolio-section .portfolio-3 div,
-.portfolio .portfolio-section .portfolio-4 .portfolio-2 div {
+.portfolio .portfolio-section .portfolio-4 div,
+.portfolio .portfolio-section .portfolio-5 div {
     padding: 0 1.5rem;
   }
-  .portfolio .portfolio-section .portfolio-1 .textilee-info,
+  .portfolio .portfolio-section .portfolio-1 .tracker-info,
+.portfolio .portfolio-section .portfolio-1 .textilee-info,
 .portfolio .portfolio-section .portfolio-1 .foodhub-info,
 .portfolio .portfolio-section .portfolio-1 .news-info,
 .portfolio .portfolio-section .portfolio-1 .moneyTracker-info,
+.portfolio .portfolio-section .portfolio-2 .tracker-info,
+.portfolio .portfolio-section .portfolio-2 .textilee-info,
+.portfolio .portfolio-section .portfolio-2 .foodhub-info,
+.portfolio .portfolio-section .portfolio-2 .news-info,
+.portfolio .portfolio-section .portfolio-2 .moneyTracker-info,
+.portfolio .portfolio-section .portfolio-3 .tracker-info,
 .portfolio .portfolio-section .portfolio-3 .textilee-info,
 .portfolio .portfolio-section .portfolio-3 .foodhub-info,
 .portfolio .portfolio-section .portfolio-3 .news-info,
 .portfolio .portfolio-section .portfolio-3 .moneyTracker-info,
-.portfolio .portfolio-section .portfolio-4 .portfolio-2 .textilee-info,
-.portfolio .portfolio-section .portfolio-4 .portfolio-2 .foodhub-info,
-.portfolio .portfolio-section .portfolio-4 .portfolio-2 .news-info,
-.portfolio .portfolio-section .portfolio-4 .portfolio-2 .moneyTracker-info {
+.portfolio .portfolio-section .portfolio-4 .tracker-info,
+.portfolio .portfolio-section .portfolio-4 .textilee-info,
+.portfolio .portfolio-section .portfolio-4 .foodhub-info,
+.portfolio .portfolio-section .portfolio-4 .news-info,
+.portfolio .portfolio-section .portfolio-4 .moneyTracker-info,
+.portfolio .portfolio-section .portfolio-5 .tracker-info,
+.portfolio .portfolio-section .portfolio-5 .textilee-info,
+.portfolio .portfolio-section .portfolio-5 .foodhub-info,
+.portfolio .portfolio-section .portfolio-5 .news-info,
+.portfolio .portfolio-section .portfolio-5 .moneyTracker-info {
     padding: 0 0 0 1.5rem;
   }
 }
 @media (max-width: 948px) {
-  .portfolio .portfolio-section .portfolio-1,
+  .portfolio .portfolio-section .portfolio-5,
+.portfolio .portfolio-section .portfolio-1,
 .portfolio .portfolio-section .portfolio-3 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1049,13 +1048,19 @@ section .home-section.show {
         -ms-flex-align: center;
             align-items: center;
   }
-  .portfolio .portfolio-section .portfolio-1 div,
+  .portfolio .portfolio-section .portfolio-5 div,
+.portfolio .portfolio-section .portfolio-1 div,
 .portfolio .portfolio-section .portfolio-3 div {
     width: 70%;
     margin-bottom: 1rem;
   }
-  .portfolio .portfolio-section .portfolio-1 .textilee-info,
+  .portfolio .portfolio-section .portfolio-5 .tracker-info,
+.portfolio .portfolio-section .portfolio-5 .textilee-info,
+.portfolio .portfolio-section .portfolio-5 .foodhub-info,
+.portfolio .portfolio-section .portfolio-1 .tracker-info,
+.portfolio .portfolio-section .portfolio-1 .textilee-info,
 .portfolio .portfolio-section .portfolio-1 .foodhub-info,
+.portfolio .portfolio-section .portfolio-3 .tracker-info,
 .portfolio .portfolio-section .portfolio-3 .textilee-info,
 .portfolio .portfolio-section .portfolio-3 .foodhub-info {
     width: 70%;
@@ -1083,18 +1088,25 @@ section .home-section.show {
   }
 }
 @media (max-width: 700px) {
-  .portfolio .portfolio-section .portfolio-1,
+  .portfolio .portfolio-section .portfolio-5,
+.portfolio .portfolio-section .portfolio-1,
 .portfolio .portfolio-section .portfolio-3 {
     margin-bottom: 1rem;
   }
-  .portfolio .portfolio-section .portfolio-1 div,
+  .portfolio .portfolio-section .portfolio-5 div,
+.portfolio .portfolio-section .portfolio-1 div,
 .portfolio .portfolio-section .portfolio-3 div {
     width: 90%;
     margin-bottom: 2rem;
     padding: 0;
   }
-  .portfolio .portfolio-section .portfolio-1 .textilee-info,
+  .portfolio .portfolio-section .portfolio-5 .tracker-info,
+.portfolio .portfolio-section .portfolio-5 .textilee-info,
+.portfolio .portfolio-section .portfolio-5 .foodhub-info,
+.portfolio .portfolio-section .portfolio-1 .tracker-info,
+.portfolio .portfolio-section .portfolio-1 .textilee-info,
 .portfolio .portfolio-section .portfolio-1 .foodhub-info,
+.portfolio .portfolio-section .portfolio-3 .tracker-info,
 .portfolio .portfolio-section .portfolio-3 .textilee-info,
 .portfolio .portfolio-section .portfolio-3 .foodhub-info {
     padding: 0;
