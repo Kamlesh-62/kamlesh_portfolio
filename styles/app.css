@@ -1,0 +1,24 @@
+.project-info{
+    padding: 2rem;
+}
+        .project-info h3{
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            letter-spacing: 1.1px;
+        }
+        .project-info p{
+            letter-spacing: 1.1px;
+            font-family: 'Montserrat', sans-serif;;
+            font-weight: 500;
+            font-size: clamp(0.80rem, 1.5vw, .95rem);
+            color: #767676;
+            margin-top: 1rem;
+            line-height: 1.5;
+        }
+        .project-info p.project-details{
+            color: #000;
+            line-height: 1.5;
+            font-style: italic;
+            font-weight: 400;
+            font-size: clamp(0.80rem, 1.5vw, .95rem);
+        }
+    

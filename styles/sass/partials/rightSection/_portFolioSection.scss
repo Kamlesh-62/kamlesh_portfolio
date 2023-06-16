@@ -84,8 +84,34 @@
                 }
             }
         }
+        .single-project{
+            .project-info{
+                h3{
+                    font-size: clamp(1rem, 2vw, 1.2rem);
+                    letter-spacing: 1.1px;
+                }
+                p{
+                    letter-spacing: 1.1px;
+                    font-family: $primaryFontFamily;
+                    font-weight: 500;
+                    font-size: clamp(0.80rem, 1.5vw, .95rem);
+                    color: $secondaryColor;
+                    margin-top: 1rem;
+                    line-height: 1.5;
+                }
+                p.project-details{
+                    color: $blackColor;
+                    line-height: 1.5;
+                    font-style: italic;
+                    font-weight: 400;
+                    font-size: clamp(0.80rem, 1.5vw, .95rem);
+                }
+            }
+
+        }
     }
 }
+
 // show portfolio section on click
 .portfolio.show{
     opacity: 1;
